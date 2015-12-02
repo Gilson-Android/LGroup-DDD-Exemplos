@@ -30,8 +30,9 @@ namespace Ioc
             // Será instanciado o PessoaRepository..
             container.Register<IPessoaRepository, PessoaRepository>(life);
             container.Register<IPessoaApplicationService, PessoaApplicationService>();
+            container.RegisterWebApiRequest<PessoaContext>();
             container.Register<IUnityOfWork, UnityOfWork>();
-            container.Register<PessoaContext>();
+            
         }
     }
 }

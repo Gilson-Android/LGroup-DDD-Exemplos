@@ -21,7 +21,7 @@ namespace UI.WebApi.Controllers
         [Route("seila")]
         public HttpResponseMessage Get()
         {
-            _pessoaApplicationService.Add(new PessoaEntity(30, "Natalia", SexoValueObject.Feminino));
+            _pessoaApplicationService.Add(new PessoaEntity(30, "Maria", SexoValueObject.Feminino));
 
             return Request.CreateResponse(HttpStatusCode.OK, "Funcionou");
         }
