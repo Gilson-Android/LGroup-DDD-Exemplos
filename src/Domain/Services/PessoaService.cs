@@ -7,6 +7,8 @@ namespace LGroup.Arquitetura.DDD.Domain.Services
 {
     public class PessoaService : IPessoaService
     {
+
+        //Quem vai instanciar o Repositorio é Ioc 
         private readonly IPessoaRepository _pessoaRepository;
 
         public PessoaService(IPessoaRepository pessoaRepository)

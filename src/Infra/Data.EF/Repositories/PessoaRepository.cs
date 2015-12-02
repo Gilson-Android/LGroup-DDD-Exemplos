@@ -8,17 +8,16 @@ namespace LGroup.Arquitetura.DDD.Data.EF.Repositories
 {
     public class PessoaRepository : IPessoaRepository
     {
-        private PessoaContext _pessoaContext;
+        private readonly PessoaContext _pessoaContext;
 
-        public PessoaRepository()
+        public PessoaRepository(PessoaContext pessoaContext)
         {
-            _pessoaContext = new PessoaContext();
+            _pessoaContext = pessoaContext;
         }
 
         public void Add(PessoaEntity pessoa)
         {
             _pessoaContext.PessoaEntities.Add(pessoa);
-            _pessoaContext.SaveChanges();
         }
     }
 }
