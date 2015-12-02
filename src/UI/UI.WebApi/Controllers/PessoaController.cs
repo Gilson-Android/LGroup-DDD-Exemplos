@@ -14,8 +14,6 @@ namespace UI.WebApi.Controllers
 
         public PessoaController(IPessoaRepository pessoaRepository)
         {
-
-
             _pessoaRepository = pessoaRepository;
         }
 
@@ -24,6 +22,7 @@ namespace UI.WebApi.Controllers
         public HttpResponseMessage Get()
         {
             _pessoaRepository.Add(new PessoaEntity(30, "Natalia", SexoValueObject.Feminino));
+
             return Request.CreateResponse(HttpStatusCode.OK, "Funcionou");
         }
     }
