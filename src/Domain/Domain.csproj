@@ -43,6 +43,7 @@
     <Compile Include="Contracts\Repositories\Core\IAddRepository.cs" />
     <Compile Include="Contracts\Repositories\IPessoaRepository.cs" />
     <Compile Include="Contracts\Services\IPessoaService.cs" />
+    <Compile Include="Contracts\UnityOfWork\IUnityOfWork.cs" />
     <Compile Include="Entities\Core\Entity.cs" />
     <Compile Include="Entities\PessoaEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

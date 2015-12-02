@@ -133,6 +133,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Application\Application.csproj">
+      <Project>{5675d5ff-cc03-4e2b-973e-a48cdfd194db}</Project>
+      <Name>Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Domain\Domain.csproj">
       <Project>{811e5295-7fcc-472a-85d8-c3567b932ebe}</Project>
       <Name>Domain</Name>
